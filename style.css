@@ -68,13 +68,19 @@ footer {
 /* タブレット縦置きサイズ（768px）以下の際に適用される設定 */
 @media screen and (max-width: 768px) {
   main {
-    width: 90%;
-    flex-direction: column;
+    width: 100%;
+    display: block;
   }
 
   .step-box {
     width: 90%;
+    margin: 0 auto;
     margin-bottom: 20px;
+  }
+
+  .step-box:last-child {
+    margin-bottom: 0;
+    margin: 0 auto;
   }
 
 }
